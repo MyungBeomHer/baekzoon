@@ -22,7 +22,7 @@ def bktk(row):
         #9 -> 9입장에서는 9가 먼저 들어왔고
         # 그후 재귀 호출 시 9가 된다.
         #이 때 9 는 9 -> 9로 접근 하려는데
-        # 이미 9가 before에 있기 때문에 접근 불가 
+        # 이미 9가 before에 있기 때문에 접근 불가
         if visited[i] == False and before != arr[i]:
             #삽입
             visited[i] = True

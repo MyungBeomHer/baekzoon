@@ -20,8 +20,9 @@ def main():
     N = int(input())
     M = int(input())
 
-    adj = [[]for i in range(N)]
+    adj = [[]for i in range(N)] #정점의 갯수만큼 정점 만들기
 
+    #간선의 갯수만큼 돌리기
     for i in range(M):
         s,d,w = map(int,input().split())
         adj[s-1].append((w, d-1)) #[(거리,도착지1) (거리,도착지2) (거리,도착지3) ...(거리,도착지 마지막)]
