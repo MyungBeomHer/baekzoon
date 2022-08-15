@@ -23,6 +23,7 @@ while Q:
         ny = y + dy[i]
         if 0<= nx <h and 0<= ny <M and G[nx][ny] == 0:
             G[nx][ny] = G[x][y] + 1
+            print(*G)
             Q.append((nx,ny))
 
 Answer = G[0][0]
